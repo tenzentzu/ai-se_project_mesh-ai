@@ -1,0 +1,40 @@
+{
+  "name": "ai-se_project_mesh-ai",
+  "version": "1.0.0",
+  "description": "A web platform that helps you get search documents using AI",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "nodemon --exec tsx src/index.ts",
+    "lint": "eslint src/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tripleten-com/ai-se_project_mesh-ai.git"
+  },
+  "keywords": [],
+  "author": "Caelis Vale",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/tripleten-com/ai-se_project_mesh-ai/issues"
+  },
+  "homepage": "https://github.com/tripleten-com/ai-se_project_mesh-ai#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/express": "^5.0.6",
+    "@types/node": "^22.20.3",
+    "eslint": "^10.10.0",
+    "eslint-config-prettier": "^10.1.8",
+    "nodemon": "^3.1.14",
+    "prettier": "^3.9.7",
+    "tsx": "^4.23.13",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.70.0"
+  }
+}

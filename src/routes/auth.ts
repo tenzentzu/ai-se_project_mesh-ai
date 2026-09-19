@@ -1,8 +1,8 @@
 import { Router } from "express";
 import { getCurrentUser } from "../controllers/auth.js";
 
-const usersRouter = Router();
+const authRouter = Router();
 
-usersRouter.get("/", getCurrentUser);
+authRouter.get("/me", getCurrentUser);
 
-export { usersRouter };
+export { authRouter };

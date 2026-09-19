@@ -1,6 +1,10 @@
 import express from 'express';
+import router from "./routes/index.js";
+
 
 const app = express();
+
+app.use(router);
 
 app.get("/health", (req, res): void => {
     const now = new Date();

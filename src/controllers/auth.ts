@@ -15,4 +15,24 @@ res.status(200).json({
 })
 };
 
-export { getCurrentUser };
+const createNewUser = (req: Request, res: Response): void => {
+  console.log("User created successfully.");
+
+  res.status(201).json({
+    success: true,
+    data: {},
+    error: null
+  })
+}
+
+const userLogIn = (req: Request, res: Response): void => {
+  console.log("Log In Successful");
+
+  res.status(200).json({
+    success: true,
+    data: {},
+    error: null
+  })
+}
+
+export { getCurrentUser, createNewUser, userLogIn };

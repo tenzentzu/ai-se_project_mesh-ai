@@ -5,7 +5,7 @@ const getAllChats = (req:Request, res: Response): void => {
         success: true,
         data: {},
         error: null
-    })
+    });
 };
 
 const createNewChat = (req:Request, res: Response): void => {
@@ -13,7 +13,7 @@ const createNewChat = (req:Request, res: Response): void => {
         success: true,
         data: {},
         error: null
-    })
+    });
 };
 
 const getChatById = (req:Request, res: Response): void => {
@@ -21,23 +21,19 @@ const getChatById = (req:Request, res: Response): void => {
         success: true,
         data: {},
         error: null
-    })
+    });
 };
 
 const deleteChat = (req:Request, res: Response): void => {
-    res.status(204).json({
-        success: true,
-        data: {},
-        error: null
-    })
-};
+    console.log("Chat deleted");
+    res.status(204)};
 
 const sendChatGetReply = (req:Request, res: Response): void => {
     res.status(201).json({
         success: true,
         data: {},
         error: null
-    })
+    });
 };
 
 export { getAllChats, createNewChat, getChatById, deleteChat, sendChatGetReply};

@@ -27,19 +27,6 @@ app.get("/health", (req, res): void => {
     );
 });
 
-app.get("/chats", (req, res): void => {
-    const now = new Date();
-    console.log(now);
-    // console.log(new Date().getTime());
-    res.status(200).json(
-        {
-            "success": "true.",
-            "data": {"status": "ok"},
-            "error": null
-        }
-    );
-});
-
 app.use(notFoundHandler);
 app.use(errorHandler);
 

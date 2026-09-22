@@ -3,4 +3,6 @@ import { askQuestionGetAnswer } from "../controllers/query.js";
 
 const queryRouter = Router();
 
-queryRouter.post("/query", askQuestionGetAnswer);
+queryRouter.post("/", askQuestionGetAnswer);
+
+export { queryRouter };

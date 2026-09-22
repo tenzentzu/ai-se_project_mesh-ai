@@ -3,9 +3,9 @@ import { uploadDoc, getDocsForCurrentUser, getDocById, deleteDoc } from "../cont
 
 const docsRouter = Router();
 
-docsRouter.post("/documents", uploadDoc);
-docsRouter.get("/documents", getDocsForCurrentUser);
-docsRouter.get("/documents/:id", getDocById);
-docsRouter.delete("/documents/:id", deleteDoc);
+docsRouter.post("/", uploadDoc);
+docsRouter.get("/", getDocsForCurrentUser);
+docsRouter.get("/:id", getDocById);
+docsRouter.delete("/:id", deleteDoc);
 
 export { docsRouter };

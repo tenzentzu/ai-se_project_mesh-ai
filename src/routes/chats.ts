@@ -3,10 +3,10 @@ import { getAllChats, createNewChat, getChatById, deleteChat,sendChatGetReply } 
 
 const chatRouter = Router();
 
-chatRouter.get("/chats", getAllChats);
-chatRouter.post("/chats", createNewChat);
-chatRouter.get("/chats/:id", getChatById);
-chatRouter.delete("/chats/:id", deleteChat);
-chatRouter.post("/chats/:id/messages", sendChatGetReply);
+chatRouter.get("/", getAllChats);
+chatRouter.post("/", createNewChat);
+chatRouter.get("/:id", getChatById);
+chatRouter.delete("/:id", deleteChat);
+chatRouter.post("/:id/messages", sendChatGetReply);
 
 export { chatRouter };

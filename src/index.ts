@@ -10,6 +10,7 @@ app.use(logger)
 app.use(express.json());
 app.use(router);
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 app.get('/test-error', (req, res) => {
   throw new Error('Test error');
 });

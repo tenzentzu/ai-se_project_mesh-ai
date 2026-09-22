@@ -26,7 +26,8 @@ const getChatById = (req:Request, res: Response): void => {
 
 const deleteChat = (req:Request, res: Response): void => {
     console.log("Chat deleted");
-    res.status(204)};
+    res.status(204).end();
+};
 
 const sendChatGetReply = (req:Request, res: Response): void => {
     res.status(201).json({
